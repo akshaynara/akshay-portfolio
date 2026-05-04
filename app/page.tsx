@@ -96,12 +96,12 @@ export default function RevenueSystem() {
 
           {/* Social Links */}
           <div className="flex gap-4 mt-6">
-            <a href="https://www.linkedin.com/in/akshaynara/" target="_blank">
+            <a href="https://www.linkedin.com/in/akshaynara/" target="_blank" rel="noopener noreferrer">
               <Button className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black transition">
                 LinkedIn
               </Button>
             </a>
-            <a href="https://www.instagram.com/traveller_akshaynara/" target="_blank">
+            <a href="https://www.instagram.com/traveller_akshaynara/" target="_blank" rel="noopener noreferrer">
               <Button className="border border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black transition">
                 Instagram
               </Button>
@@ -110,7 +110,7 @@ export default function RevenueSystem() {
           {message && (
             <div className="mt-4 flex flex-col items-center gap-2">
               <p className="text-sm text-gray-300">{message}</p>
-              <a href="/AI_Growth_Kit_Elite_Akshay_Nara.pdf" target="_blank">
+              <a href="/AI_Growth_Kit_Elite_Akshay_Nara.pdf" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-gradient-to-r from-green-400 to-blue-500 text-black">
                   Download AI Growth Kit
                 </Button>
@@ -128,7 +128,7 @@ export default function RevenueSystem() {
           <div className="flex justify-center gap-2">
             <Input
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e: any) => setEmail(e.target.value)}
               placeholder="Enter email"
               className="bg-black border-gray-700"
             />
@@ -145,7 +145,7 @@ export default function RevenueSystem() {
         {/* CTA */}
         <section className="text-center py-20">
           <h2 className="text-3xl mb-4">Automate Your Business with AI</h2>
-          <a href="https://calendly.com/your-link" target="_blank">
+          <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer">
             <Button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:opacity-90">
               Book Strategy Call
             </Button>
